@@ -15,7 +15,6 @@ import java.util.stream.Collectors;
 @RestController
 public class WineController {
 
-
     @Autowired
     private WineService wineService;
     @Secured("ROLE_MANAGERS")
