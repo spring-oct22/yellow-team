@@ -50,7 +50,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .passwordEncoder(new BCryptPasswordEncoder())
                 .passwordAttribute("userPassword");
     }
-
    /* @Bean
     public UserDetailsContextMapper userDetailsContextMapper() {
         return new LdapUserDetailsMapper() {
