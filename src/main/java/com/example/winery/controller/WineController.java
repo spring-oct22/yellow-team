@@ -22,7 +22,6 @@ public class WineController {
     @GetMapping("/wine")
     public Collection<WineDTO> getAll() {
         return wineService.getAll();
-
     }
     @GetMapping("/wine/{id}")
     public WineDTO getWine(@PathVariable int id) {
