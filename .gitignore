@@ -33,4 +33,4 @@ build/
 .vscode/
 
 ###Credentials###
-application.properties
+/application.properties
