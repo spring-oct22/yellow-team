@@ -18,7 +18,6 @@ public class WineController {
 
     @Autowired
     private WineService wineService;
-
     @Secured("ROLE_MANAGERS")
     @GetMapping("/wine")
     public Collection<WineDTO> getAll() {
