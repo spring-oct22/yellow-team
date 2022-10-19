@@ -25,7 +25,6 @@ public class WineController {
         return wineService.getAll();
 
     }
-
     @GetMapping("/wine/{id}")
     public WineDTO getWine(@PathVariable int id) {
         return wineService.getWine(id);
