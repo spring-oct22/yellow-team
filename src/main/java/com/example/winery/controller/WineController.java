@@ -17,16 +17,19 @@ public class WineController {
 
     @Autowired
     private WineService wineService;
+
     @Secured("ROLE_MANAGERS")
     @GetMapping("/wine")
     public Collection<WineDTO> getAll() {
         return wineService.getAll();
     }
+
     @GetMapping("/wine/{id}")
     public WineDTO getWine(@PathVariable int id) {
         return wineService.getWine(id);
     }
 
+    @Secured("ROLE_ADMINS")
     @DeleteMapping("/wine/{id}")
     public String deleteWine(@PathVariable int id) {
         return wineService.deleteWine(id);
